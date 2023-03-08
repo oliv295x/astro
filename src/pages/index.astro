@@ -1,4 +1,8 @@
 ---
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+import Button from "../components/Button.astro";
+
 ---
 
 <html lang="en">
@@ -10,6 +14,18 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header></header>
+		<main>
+			<Button variant="primary" size="medium">TEXT</Button>
+			<Button variant="secondray" size="medium">TEXT</Button>
+			<h1>Astro</h1>
+			<p>test</p>
+			<Card header="hej A">
+				<h3>lort</h3>
+			</Card>
+			<Card header="hej B" text="Lorem ipsum2"/>
+		</main>
+		<footer></footer>
+		
 	</body>
 </html>
